@@ -1,0 +1,15 @@
+<button (click)="register()">Register</button>
+<button (click)="login()">Log in</button>
+<button (click)="getProfile()">getProfile</button>
+<button (click)="getUsers()">getUsers</button>
+<button (click)="logOut()">logOut</button>
+
+<div>
+  <ul>
+    <li *ngFor="let user of users">
+      <p>{{ user.email }}</p>
+      <button (click)="follow(user)">follow</button>
+      <button (click)="unfollow(user)">unfollow</button>
+    </li>
+  </ul>
+</div>
